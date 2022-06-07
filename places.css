@@ -8,17 +8,24 @@ header {
 }
 
 main ul {
-    width: 800px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 20px;
+    width: 1200px;
+    margin: 0 auto 48px auto;
 }
 
 main li {
     display: flex;
+    justify-content: space-between;
     background-color: white;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     overflow: hidden;
+}
 
+main li:nth-of-type(3) {
+    grid-column: 1 / span 2;
 }
 
 main li img {
